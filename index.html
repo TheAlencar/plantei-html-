@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Vida Verde - Login</title>
+    <meta charset="UTF-8">
+    <title>Vida Verde - Login</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-/>
-  <style>
-    body {
-      background: #f4f8f5;
-    }
-    .card {
-      border-radius: 16px;
-    }
-    .logo {
-      font-weight: bold;
-      color: #2f7d32;
-      font-size: 1.5rem;
-    }
-  </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
 
-  <!-- LOGIN -->
-  <div class="card shadow p-4" style="max-width: 400px; width: 100%;" id="loginCard">
-    <div class="text-center mb-3">
-      <div class="logo">🌱 Vida Verde</div>
-      <small class="text-muted">Acesso do usuário</small>
-    </div>
+        <!-- LOGIN -->
+        <div class="card shadow p-4" style="max-width: 400px; width: 100%;" id="loginCard">
+            <div class="text-center mb-3">
+                <div class="logo">🌱 Vida Verde</div>
+                <small class="text-muted">Acesso do usuário</small>
+            </div>
 
-    <div class="mb-3">
-      <label class="form-label">Email</label>
-      <input type="email" id="email" class="form-control" placeholder="email@email.com">
-    </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="email@email.com">
+            </div>
 
-    <div class="mb-3">
-      <label class="form-label">Senha</label>
-      <input type="password" id="password" class="form-control">
-    </div>
+            <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" id="password" class="form-control">
+            </div>
 
-    <button class="btn btn-success w-100" onclick="login()">Entrar</button>
+            <button class="btn btn-success w-100" onclick="login()">Entrar</button>
 
-    <div class="text-danger text-center mt-2" id="error"></div>
-  </div>
+            <div class="text-danger text-center mt-2" id="error"></div>
+        </div>
 
-  <!-- DASHBOARD -->
-  <div class="card shadow p-4 d-none" style="max-width: 500px; width: 100%;" id="userCard">
-    <div class="text-center mb-3">
-      <div class="logo">🌱 Vida Verde</div>
-      <small class="text-muted">Dados do Usuário</small>
-    </div>
+        <!-- DASHBOARD -->
+        <div class="card shadow p-4 d-none" style="max-width: 500px; width: 100%;" id="userCard">
+            <div class="text-center mb-3">
+                <div class="logo">🌱 Vida Verde</div>
+                <small class="text-muted">Dados do Usuário</small>
+            </div>
 
-    <div class="text-center">
-      <img id="avatar" class="rounded-circle mb-3" width="100">
-      <h5 id="name"></h5>
-      <p class="text-muted" id="userEmail"></p>
-    </div>
+            <div class="text-center">
+                <img id="avatar" class="rounded-circle mb-3" width="100">
+                <h5 id="name"></h5>
+                <p class="text-muted" id="userEmail"></p>
+            </div>
 
-    <button class="btn btn-outline-danger w-100 mt-3" onclick="logout()">Sair</button>
-  </div>
+            <button class="btn btn-outline-danger w-100 mt-3" onclick="logout()">Sair</button>
+        </div>
 
-    <script src="login.js"></script>
+        <script src="login.js"></script>
 </body>
+
 </html>

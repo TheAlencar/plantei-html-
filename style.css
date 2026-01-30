@@ -1,0 +1,13 @@
+body {
+    background: #f4f8f5;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #2f7d32;
+    font-size: 1.5rem;
+}
